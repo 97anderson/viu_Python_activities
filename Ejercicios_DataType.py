@@ -64,3 +64,23 @@ tupla = (1,2,3,4,5,6,7,8)
 tupla_new = (9,)
 tupla += tupla_new
 print(tupla)
+
+#7. Dada la lista [1,2,3,4,5,6,7,8] escribe un programa que, a partir de esta lista, obtenga la lista [8,6,4,2] y la muestre por pantalla.
+input("EJERCICIO #7")
+lista_numeros = [1,2,3,4,5,6,7,8]
+print(lista_numeros[-1::-2])
+
+
+#8. Escribe un programa que, dada una tupla y un índice válido *i*, elimine el elemento de la tupla que se encuentra en la posición *i*. Para este ejercicio sólo puedes usar objetos de tipo tupla. No puedes convetir la *tupla* a una *lista*, por ejemplo.
+input("EJERCICIO #8")
+tuple= tuple(range(10))
+indice=1
+print(tuple)
+for i in tuple:
+    if i != indice:
+        tupla_new += tuple[i]
+
+tuple[::1]  # Elementos del índice 1 al 5 de 3 en 3
+
+
+print(tupla_new)
