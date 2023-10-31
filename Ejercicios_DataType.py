@@ -51,3 +51,16 @@ lista = [1,1,2,3,4,5,5,6,7,8,1]
 print(list(set(lista)))
 
 #5. Escribe un programa que, dada una *lista* de strings *L*, un string *s* perteneciente a *L* y un string *t*, reemplace *s* por *t* en *L*. El programa debe mostrar la lista resultante por pantalla.
+input("EJERCICIO #5")
+s = "BMW"
+t = "Toyota"
+L = ["Mazda",s, "audi", "Ferrari",t]
+L[L.index(s)] = t
+print(L)
+
+#6. Escribe un programa que defina una *tupla* con elementos numéricos, reemplace el valor del último por un valor diferente y muestre la *tupla* por pantalla. Recuerda que las *tuplas* son inmutables. Tendrás que usar objetos intermedios.
+input("EJERCICIO #6")
+tupla = (1,2,3,4,5,6,7,8)
+tupla_new = (9,)
+tupla += tupla_new
+print(tupla)
