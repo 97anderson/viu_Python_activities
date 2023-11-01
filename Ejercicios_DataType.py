@@ -73,14 +73,28 @@ print(lista_numeros[-1::-2])
 
 #8. Escribe un programa que, dada una tupla y un índice válido *i*, elimine el elemento de la tupla que se encuentra en la posición *i*. Para este ejercicio sólo puedes usar objetos de tipo tupla. No puedes convetir la *tupla* a una *lista*, por ejemplo.
 input("EJERCICIO #8")
-tuple= tuple(range(10))
-indice=1
+tuple = tuple(range(10))
+indice = 3
+
+print("Tupla original: ")
 print(tuple)
-for i in tuple:
-    if i != indice:
-        tupla_new += tuple[i]
-
-tuple[::1]  # Elementos del índice 1 al 5 de 3 en 3
+print("Tupla consecuente sin indice: " )
+print(tuple[:indice-1:1] + tuple[indice::1])
 
 
-print(tupla_new)
+#9. Escribe un programa que obtenga la mediana de una *lista* de números. Recuerda que la mediana *M* de una lista de números *L* es el número que cumple la siguiente propiedad: la mitad de los números de *L* son superiores a *M* y la otra mitad son inferiores. Cuando el número de elementos de *L* es par, se puede considerar que hay dos medianas. No obstante, en este ejercicio consideraremos que únicamente existe una mediana.
+
+lista = list(range(9))
+M = len(lista) // 2  
+
+print(lista)
+print(M)
+
+
+
+
+
+
+
+
+
