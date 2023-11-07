@@ -86,7 +86,6 @@ print(tuple[:indice-1:1] + tuple[indice::1])
 
 lista = list(range(9))
 M = len(lista) // 2  
-
 print(lista)
 print(M)
 
