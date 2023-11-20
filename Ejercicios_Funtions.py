@@ -71,3 +71,21 @@ print(result(5,[1,2,3,4,5]))
 
 #6. Escribe una función que reciba un número entero positivo como parámetro y devuelva una lista que contenga los 5 primeros múltiplos de dicho número. Por ejemplo, si la función recibe el número 3, devolverá la lista [3, 6, 9, 12, 15]. Si la función recibe un parámetro incorrecto (por ejemplo, un múmero menor o igual a cero), mostrará un mensaje de error por pantalla y devolverá una lista vacía.
 print("EJERCICIO 6")
+def positive_number(number):
+    lista=[]
+    position=range(5)
+    
+    for element in position:
+        lista.append(number * (element+1))
+    return lista
+
+print(positive_number(5))
+
+# 7. Escribe una función que reciba una lista como parámetro y compruebe si la lista tiene duplicados. La función devolverá *True* si la lista tiene duplicados y *False* si no los tiene.
+print("EJERCICIO 7")
+def validar_duplicados(lista):
+    converted = set(lista)
+    return bool(len(converted)!=len(lista))
+
+print(validar_duplicados([1,2,3,4,5,6,7,8]))
+deploy=inttegrio
